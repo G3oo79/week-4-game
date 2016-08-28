@@ -1,0 +1,113 @@
+body {
+	background-image: url("../images/colofull.jpg");
+
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 55px;
+	background: 
+	padding: 0;
+}
+
+#head {
+	background-color: black;
+
+
+}
+
+#winner {
+	position: absolute;
+
+
+}
+
+#losser {
+	position: absolute;
+
+
+}
+
+
+.totalnumber {
+	text-align: center;
+	background-color: blue;
+	color: white; 
+	font-size: 40px;
+	margin-left: 400px;
+	margin-right: 400px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+
+
+}
+
+#row1 {
+	background-color: yellow;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 25px;
+	padding: 10px;
+	margin-bottom: 12px;
+    padding-bottom: 48px;
+    padding-top: 15px;
+
+
+
+}
+
+#row2 {
+	background-color: purple;
+	padding: 8px;
+	margin-bottom: 5px;
+
+
+
+}
+
+img {
+	height: 80px;
+	width: 90px;
+
+}
+
+#yellow {
+	padding-left: 90px;
+	padding-right: 0px;
+	
+}
+
+#blue {
+	padding-left: 90px;
+	padding-right: 0px;
+	
+
+}
+
+#red {
+	padding-left: 90px;
+	padding-right: 0px;
+	
+
+
+}
+
+.gem1 {
+	position: absolute;
+}
+.gem2 {
+	position: absolute;
+}
+
+.gem3 {
+	position:absolute;
+}
+#score {
+	font-size: 25px;
+	background-color: green;
+	max-width: 200px;
+	padding: 20px;
+
+}

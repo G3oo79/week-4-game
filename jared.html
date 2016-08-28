@@ -1,0 +1,41 @@
+<head>
+  <title>Crystal Game</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="jared1.css" rel="stylesheet" type="text/css" />
+  <!-- <script type="text/javascript" src="javascript/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="javascript/game.js"></script> -->
+</head>
+<body>
+<header>
+  <h1>Crystal Game</h1>
+</header>
+<br>
+<div class = "container">
+<h2><b>You will be given a random number at the start of the game</b>.<br><br><b>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</b><br><br><b>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</b><br><br><b> The value of each crystal is hidden from you until you click on it.</b><br><br><b> Each time when the game starts, the game will change the values of each crystal.</b><br><br>
+</h2>
+<div class = "here">
+    <p id = "numb"><span id="number"></span></p>
+  <div class = "there">
+    <p id = "one"><span id= "end"></span></p>
+    <p id = "two">Wins: <span id="winz">0</span></p>
+    <p id = "three">Losses: <span id="lossez">0</span></p>
+  </div>
+</div>
+<div id="crystals">
+  <div class = "images">
+    <img id = crystalImage border="0" alt="LOGO" src="images/emerald.jpg">
+    <img id = crystalImage2 border="0" alt="blue" src="images/blue.jpg">
+    <img id = crystalImage3 border="0" alt="red" src="images/red.png">
+    <img id = crystalImage4 border="0" alt="zircon" src="images/zircon.jpg">
+  </div>
+</div>
+<p id = "score">Your Total Score is: <br><span id="yourNumber">0</span></p>
+</div>
+
+</body>
+<style>
+  body {
+    background-image: url("images/weather.png");
+  }
+</style>
+</html>
