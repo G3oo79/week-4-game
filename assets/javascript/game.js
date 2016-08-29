@@ -13,11 +13,11 @@ $(document).ready(function(){
 
     //this funtion is to capture gems clicks!!
 	$("img").click(function(){
-		/*$(".yellowgem").animate({fontSize: '1000'},2000);*/
+		
  /* alert("it works!");*/
  });
 
-    //
+    //this is 
     $(".yellowgem").click(function() {
     select(gemYellow);
     console.log(gemYellow);
@@ -33,7 +33,14 @@ $(document).ready(function(){
 
     //
     function reset(){
-
+    	guessNumber = Math.floor((Math.random() * 102) + 19);
+    	$(".totalnumber").text(guessNumber);
+    	/*alert(guessNumber);*/
+    	counter = 0;
+    	$("#numbercount").text(counter);
+    	gemYellow= Math.floor((Math.random() * 12) + 1);
+    	gemBlue = Math.floor((Math.random() * 12) + 1);
+   		gemRed = Math.floor((Math.random() * 12) + 1);
     }
 
     //
@@ -44,13 +51,14 @@ $(document).ready(function(){
 
       if (counter > guessNumber) {
         losses++;
-        $('#losses').html(losses);
+        $('#losser').html(losses);
+        alert("you loss")
         
         reset();
       } else if (counter == guessNumber) {
         wins++;
         $('#winner').html(wins);
-        
+        alert("you win")
         reset();
       };
 
