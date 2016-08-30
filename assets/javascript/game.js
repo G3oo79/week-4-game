@@ -21,17 +21,21 @@ $(document).ready(function(){
     $(".yellowgem").click(function() {
     select(gemYellow);
     $(".yellowgem").addClass("shake");
+    setTimeout(function(){ $(".yellowgem").removeClass("shake"); }, 1000);
+    
     });
     $(".bluegem").click(function() {
     select(gemBlue);
     $(".bluegem").addClass("shake");
+    setTimeout(function(){ $(".bluegem").removeClass("shake"); }, 1000);
     });
     $(".redgem").click(function() {
     select(gemRed);
     $(".redgem").addClass("shake");
+    setTimeout(function(){ $(".redgem").removeClass("shake"); }, 1000);
     });
 
-    //
+    //Reset very important 
     function reset(){
     	guessNumber = Math.floor((Math.random() * 102) + 19);
     	$("#totalnumber").text(guessNumber);
@@ -43,7 +47,7 @@ $(document).ready(function(){
    		gemRed = Math.floor((Math.random() * 12) + 1);
     }
 
-    //
+    //this are my counters and alerts
     function select(crystals) {
       counter += crystals;
       $('#numbercount').empty();

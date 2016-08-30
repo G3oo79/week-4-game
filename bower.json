@@ -1,0 +1,20 @@
+{
+  "name": "week-4-game",
+  "homepage": "https://github.com/g2dog79/week-4-game",
+  "description": "game project",
+  "main": "Week4",
+  "keywords": [
+    "crystal"
+  ],
+  "authors": [
+    "GeoB"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
