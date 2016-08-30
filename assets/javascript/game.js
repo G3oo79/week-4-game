@@ -17,18 +17,18 @@ $(document).ready(function(){
  /* alert("it works!");*/
  });
 
-    //this is 
+    //this are my click events
     $(".yellowgem").click(function() {
     select(gemYellow);
-    console.log(gemYellow);
+    $(".yellowgem").addClass("shake");
     });
     $(".bluegem").click(function() {
     select(gemBlue);
-    console.log(gemBlue);
+    $(".bluegem").addClass("shake");
     });
     $(".redgem").click(function() {
     select(gemRed);
-    console.log(gemRed);
+    $(".redgem").addClass("shake");
     });
 
     //
@@ -63,5 +63,5 @@ $(document).ready(function(){
       };
 
     };
-
+    
 });
