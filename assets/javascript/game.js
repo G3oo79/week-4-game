@@ -8,7 +8,7 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
     //this is where the munber to match is randomize!!
-    $(".totalnumber").text(guessNumber);
+    $("#totalnumber").text(guessNumber);
     /*alert(guessNumber);*/
 
     //this funtion is to capture gems clicks!!
@@ -34,7 +34,7 @@ $(document).ready(function(){
     //
     function reset(){
     	guessNumber = Math.floor((Math.random() * 102) + 19);
-    	$(".totalnumber").text(guessNumber);
+    	$("#totalnumber").text(guessNumber);
     	/*alert(guessNumber);*/
     	counter = 0;
     	$("#numbercount").text(counter);
@@ -52,25 +52,16 @@ $(document).ready(function(){
       if (counter > guessNumber) {
         losses++;
         $('#losser').html(losses);
-        alert("you loss")
-        
+        sweetAlert("Oops...", 
+        "Sorry you Lost!", "error");
         reset();
       } else if (counter == guessNumber) {
         wins++;
         $('#winner').html(wins);
-        alert("you win")
+        swal("Good job!", "You Won!", "success")
         reset();
       };
 
     };
-
-
-
-
-
-
-
-
-
 
 });

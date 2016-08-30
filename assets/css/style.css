@@ -30,16 +30,17 @@ h1 {
 }
 
 
-.totalnumber {
+#totalnumber {
 	text-align: center;
 	background-color: blue;
-	color: white; 
-	font-size: 40px;
-	margin-left: 400px;
-	margin-right: 400px;
+	color: red; 
+	font-size: 45px;
+	margin-left: 250px;
+	margin-right: 220px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 5px;
+
 
 
 }
@@ -59,6 +60,14 @@ h1 {
 }
 
 #row2 {
+	margin: 0;
+	
+
+}
+
+#row3 {
+	margin-right: 0;
+	margin-left:0;
 	background-color: purple;
 	padding: 8px;
 	margin-bottom: 5px;
