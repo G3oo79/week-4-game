@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	//global variables
+    //=====================================================
+
 	var guessNumber = Math.floor((Math.random() * 102) + 19);
     var counter = 0;
     var gemYellow= Math.floor((Math.random() * 12) + 1);
@@ -7,35 +9,47 @@ $(document).ready(function(){
     var gemRed = Math.floor((Math.random() * 12) + 1);
     var wins = 0;
     var losses = 0;
-    //this is where the munber to match is randomize!!
+
+
+    //this method sets a random number into the selector.
+    //======================================================
     $("#totalnumber").text(guessNumber);
     /*alert(guessNumber);*/
 
     //this funtion is to capture gems clicks!!
+    //==========================================
 	$("img").click(function(){
 		
  /* alert("it works!");*/
  });
 
     //this are my click events
+    //================================
     $(".yellowgem").click(function() {
     select(gemYellow);
+    //set the animation by setting up a function
+    //==============================================
     $(".yellowgem").addClass("shake");
     setTimeout(function(){ $(".yellowgem").removeClass("shake"); }, 1000);
     
     });
     $(".bluegem").click(function() {
     select(gemBlue);
+     //set the animation by setting up a function
+    //==============================================
     $(".bluegem").addClass("shake");
     setTimeout(function(){ $(".bluegem").removeClass("shake"); }, 1000);
     });
     $(".redgem").click(function() {
     select(gemRed);
+     //set the animation by setting up a function
+    //==============================================
     $(".redgem").addClass("shake");
     setTimeout(function(){ $(".redgem").removeClass("shake"); }, 1000);
     });
 
-    //Reset very important 
+    //Reset very important!! resets the gems and the "your total number"
+    //==================================================================
     function reset(){
     	guessNumber = Math.floor((Math.random() * 102) + 19);
     	$("#totalnumber").text(guessNumber);
@@ -47,7 +61,9 @@ $(document).ready(function(){
    		gemRed = Math.floor((Math.random() * 12) + 1);
     }
 
-    //this are my counters and alerts
+    //function for counters and alerts ! very difficult to get this to work!!
+    //need more practice!!!..
+    //=======================================================================
     function select(crystals) {
       counter += crystals;
       $('#numbercount').empty();
